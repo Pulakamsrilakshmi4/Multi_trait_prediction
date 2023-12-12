@@ -5,7 +5,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the trained model
-model = joblib.load('random_forest_model.joblib')
+model = joblib.load('random_forest_model_avg.joblib')
 
 @app.route('/')
 def index():
