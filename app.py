@@ -16,7 +16,7 @@ def predict():
     sequence = request.form['sequence']
 
     # Use the loaded model for prediction
-    new_data = {'Sequence': [sequence]}
+    new_data = {'Allele Sequence': [sequence]}
     new_df = pd.DataFrame(new_data)
     prediction = model.predict(new_df)
 
